@@ -21,9 +21,46 @@
     </style>
 </head>
 <body>
-    <div class="title-container">
-        <h1>Wisy Library</h1>
-    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+ <title>Book Click Game</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+        .book {
+            width: 150px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .book:hover {
+            transform: scale(1.1);
+        }
+        #message {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+    <h1>Click the Book!</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Book" class="book" onclick="showMessage()">
+    <p id="message">By reading, you could increase your literacy skill!</p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
     
 <body>   
     <h1 style="color:DarkTurquoise;">Welcome in Wisy's Library!</h1>
@@ -32,15 +69,6 @@
     <p>Hi! My name is Wilda Syafitri, but I'm known as Wisy. I'm a collage student in Library and Information Science Department, Universitas Sumatera Utara. So enjoy my library!</p>
     <p>Cooperate with:</p>
     <a href="https://library.wbi.ac.id/index.php">Perpustakaan Wilmar Bisnis Indonesia</a>
-    <h3>New Tab</h3>
-    <ul>
-        <li>
-            <a href="about.html">About Me</a>
-        </li>
-        <li>
-            <a href="contact-us.html">Contact Us</a>
-        </li>
-    </ul>
 </body>
     <script src="script.js"></script>
 </html>
