@@ -18,67 +18,87 @@
         h1 {
             margin: 0;
         }
+        
+        .navbar {
+            width: 100%;
+            position: relative;
+        }
+        
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end; /* Mengatur item ke kanan */
+        }
+        
+        .navbar li {
+            margin-left: 20px; /* Jarak antar item menu */
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .animated-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .animated-button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
     
-<nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-    </ul>
-</nav>
-
-<style>
-    .navbar {
-        width: 100%;
-        position: relative;
-    }
+    <div class="content">
+        <h1 style="color:DarkTurquoise;">Welcome in Wisy's Library!</h1>
+        <p>This library is a private library owned by Wisy</p>
+        
+        <div style="text-align: center; margin: 20px auto;">
+            <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzaMu5bDwyLvKnhssxFPJzKgyODoHZCHcH4Q&s" 
+                alt="Header" 
+                style="max-width: 100%; 
+                       height: auto; 
+                       display: block; 
+                       margin: 0 auto; 
+                       border-radius: 8px; 
+                       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                       object-fit: contain;"
+                loading="lazy"
+            >
+        </div>
+        
+        <p>Hi! My name is Wilda Syafitri, but I'm known as Wisy. I'm a collage student in Library and Information Science Department, Universitas Sumatera Utara. So enjoy my library!</p>
+        <p>Cooperate with:</p>
+        <button class="animated-button" id="libraryButton" onclick="gotolib()">
+            Lets visit WBI Library!
+        </button>
+        <!-- <button onclick="darkMode()">Toggle dark mode</button> -->
+    </div>
     
-    .navbar ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: flex-end; /* Mengatur item ke kanan */
-    }
-    
-    .navbar li {
-        margin-left: 20px; /* Jarak antar item menu */
-    }
-    
-    .navbar a {
-        text-decoration: none;
-        padding: 10px;
-        display: block;
-    }
-</style>
-<body>   
-    <h1 style="color:DarkTurquoise;">Welcome in Wisy's Library!</h1>
-    <p>This library is a private library owned by Wisy</p>
-
-<div style="text-align: center; margin: 20px auto;">
-    <img 
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzaMu5bDwyLvKnhssxFPJzKgyODoHZCHcH4Q&s" 
-        alt="Header" 
-        style="max-width: 100%; 
-               height: auto; 
-               display: block; 
-               margin: 0 auto; 
-               border-radius: 8px; 
-               box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-               object-fit: contain;"
-        loading="lazy"
-    >
-</div>
-    <p>Hi! My name is Wilda Syafitri, but I'm known as Wisy. I'm a collage student in Library and Information Science Department, Universitas Sumatera Utara. So enjoy my library!</p>
-    <p>Cooperate with:</p>
-      <button class="animated-button" id="libraryButton" onclick="gotolib()">
-        Lets visit WBI Library!
-    </button>
-
-    <!-- <button onclick="darkMode()">Toggle dark mode</button> -->
-</body>
     <script src="script.js"></script>
+</body>
 </html>
