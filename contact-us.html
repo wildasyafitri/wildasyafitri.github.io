@@ -110,9 +110,48 @@
             font-size: 14px;
             color: #888;
         }
+        
+        /* Navbar styling similar to homepage */
+        .navbar {
+            width: 100%;
+            position: relative;
+        }
+        
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end; /* Mengatur item ke kanan */
+        }
+        
+        .navbar li {
+            margin-left: 20px; /* Jarak antar item menu */
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            color: #20B2AA;
+        }
+        
+        .navbar a:hover {
+            background-color: #e0f7f6;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
+    <!-- Navbar seperti di homepage -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
     <header>
         <h1>Contact Us</h1>
         <p>For any questions, you can send me a message using the form below.</p>
@@ -130,16 +169,7 @@
         <textarea id="message" name="message" rows="4" required></textarea>
         
         <input type="submit" value="Kirim Pesan">
-    </form>
-<h4>Navigation</h4>
-   <ul>
-    <li>
-           <a href="index.html">Home</a>
-    </li>
-       <li>
-           <a href="contact-us.html">Contact Us</a>
-       </li>
-    </ul>
+    </form>
     </div>
 </body>
 </html>
