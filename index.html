@@ -70,22 +70,42 @@
             color: #2c3e50;
             margin-top: 15px;
         }
-    </style>
-
-    <h3>Click the Book!</h3>
-    <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Book" class="book" onclick="showMessage()">
-    <p id="message">By reading, you could increase your literacy skill!</p>
-
-    <script>
-        function showMessage() {
-            document.getElementById("message").style.display = "block";
-        }
     <p>This library is a private library owned by Wisy</p>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        .gift-book {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        p {
+            font-size: 18px;
+            color: #333333;
+        }
+    </style>
+<div class="gift-book">
+    <h1>Gift Book</h1>
+    <p>You can increase your experience by reading!</p>
+</div>
+
 <div style="text-align: center; margin: 20px auto;">
     <img 
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzaMu5bDwyLvKnhssxFPJzKgyODoHZCHcH4Q&s" 
         alt="Header" 
-        style="max-width: 100%; 
+        style="max-width: 80%; 
                height: auto; 
                display: block; 
                margin: 0 auto; 
