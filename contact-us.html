@@ -8,113 +8,31 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+            color: #004080;
+            margin: 0;
+            padding: 0;
+            background-color: #AFEEEE; /* PaleTurquoise sebagai background utama */
         }
         
-        header {
+        .title-container {
             text-align: center;
-            border-bottom: 2px solid #20B2AA;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            padding: 20px 0;
+            background-color: #00BFFF; /* DeepSkyBlue untuk header */
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin-bottom: 0;
         }
         
         h1 {
-            color: #20B2AA;
-            margin-bottom: 10px;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
         }
         
-        .form-container {
-            background-color: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        }
-        
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-            box-sizing: border-box;
-        }
-        
-        input:focus, textarea:focus {
-            border-color: #20B2AA;
-            outline: none;
-            box-shadow: 0 0 4px rgba(32, 178, 170, 0.3);
-        }
-        
-        button {
-            background-color: #20B2AA;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        button:hover {
-            background-color: #187F79;
-        }
-        
-        .navigation {
-            margin-top: 40px;
-        }
-        
-        .navigation h4 {
-            color: #20B2AA;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-        }
-        
-        .navigation ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            gap: 15px;
-        }
-        
-        .navigation a {
-            color: #20B2AA;
-            text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-        
-        .navigation a:hover {
-            background-color: #e0f7f6;
-        }
-        
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 14px;
-            color: #888;
-        }
-        
-        /* Navbar styling similar to homepage */
         .navbar {
             width: 100%;
             position: relative;
+            background-color: #87CEEB; /* SkyBlue untuk navbar */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
         .navbar ul {
@@ -133,16 +51,113 @@
             text-decoration: none;
             padding: 10px;
             display: block;
-            color: #20B2AA;
+            color: #004080; /* Warna teks gelap untuk kontras */
+            font-weight: bold;
         }
         
         .navbar a:hover {
-            background-color: #e0f7f6;
+            color: white;
+            background-color: #00BFFF; /* DeepSkyBlue saat hover */
             border-radius: 4px;
+        }
+        
+        header {
+            text-align: center;
+            border-bottom: 2px solid #00BFFF;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            background-color: white;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            color: #00BFFF;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            color: #004080;
+        }
+        
+        .form-container {
+            background-color: white;
+            padding: 25px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid #00BFFF;
+            border-top: none;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #004080;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #B0E0E6; /* PowderBlue */
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, textarea:focus {
+            border-color: #00BFFF;
+            outline: none;
+            box-shadow: 0 0 6px rgba(0, 191, 255, 0.4);
+        }
+        
+        input[type="submit"] {
+            background-color: #00BFFF;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: bold;
+            width: auto;
+            display: block;
+            margin: 20px auto 0;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0099CC;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 14px;
+            color: #004080;
+            background-color: #87CEEB;
         }
     </style>
 </head>
 <body>
+    <div class="title-container">
+        <h1>Wisy Library</h1>
+    </div>
+    
     <!-- Navbar seperti di homepage -->
     <nav class="navbar">
         <ul>
@@ -158,18 +173,18 @@
     </header>
     
     <div class="form-container">
-       <form action="https://formspree.io/f/xdkekyoa" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="phone">No. HP:</label>
-        <input type="text" id="phone" name="phone" required>
-        
-        <label for="message">Pesan:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        
-        <input type="submit" value="Kirim Pesan">
-    </form>
+        <form action="https://formspree.io/f/xdkekyoa" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">No. HP:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <input type="submit" value="Kirim Pesan">
+        </form>
     </div>
 </body>
 </html>
