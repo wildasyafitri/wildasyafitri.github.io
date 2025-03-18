@@ -119,32 +119,18 @@
     </header>
     
     <div class="form-container">
-        <form>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name here" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email here" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
-            </div>
-            
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-    
-    <div class="navigation">
-        <h4>Navigation</h4>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-        </ul>
+       <form action="https://formspree.io/f/xdkekyoa" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">No. HP:</label>
+        <input type="text" id="phone" name="phone" required>
+        
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <input type="submit" value="Kirim Pesan">
+    </form>
     </div>
 </body>
 </html>
