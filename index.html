@@ -26,7 +26,7 @@
             width: 100%;
             position: relative;
             background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
         .navbar ul {
@@ -55,8 +55,6 @@
         .content {
             padding: 20px;
             text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
         }
         
         .animated-button {
@@ -74,10 +72,14 @@
             transform: scale(1.05);
         }
         
-        /* Book Animation Styles */
         .container {
             text-align: center;
-            padding: 40px 0;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
         .book {
@@ -119,6 +121,10 @@
     </style>
 </head>
 <body>
+    <div class="title-container">
+        <h1>Wisy Library</h1>
+    </div>
+    
     <nav class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -127,13 +133,12 @@
         </ul>
     </nav>
     
-    <div class="content">
-        <div class="container">
-            <div class="book" id="bookIcon">📚</div>
-            <div class="message" id="messageText">You can increase your experience by reading!</div>
-        </div>
-
+    <div class="container">
+        <div class="book" id="bookIcon">📚</div>
+        <div class="message" id="messageText">You can increase your experience by reading!</div>
+        
         <p>This library is a private library owned by Wisy</p>
+        
         <div style="text-align: center; margin: 20px auto;">
             <img 
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzaMu5bDwyLvKnhssxFPJzKgyODoHZCHcH4Q&s" 
@@ -157,7 +162,6 @@
         <!-- <button onclick="darkMode()">Toggle dark mode</button> -->
     </div>
     
-    <script src="script.js"></script>
     <script>
         const bookIcon = document.getElementById('bookIcon');
         const messageText = document.getElementById('messageText');
@@ -180,13 +184,14 @@
             }, 3000);
         });
         
-        // Placeholder for gotolib function if not defined in script.js
         function gotolib() {
-            if (typeof window.gotolib !== 'function') {
-                alert("Redirecting to WBI Library...");
-                // Add your actual redirect here
-            }
+            // Function to redirect to WBI Library
+            alert("Redirecting to WBI Library!");
+            // Add actual redirection here
+            // window.location.href = "https://wbi-library.com";
         }
     </script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
