@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Wisy Library</title>
+    <title>Form - Wisy Library</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
@@ -25,21 +25,24 @@
     </nav>
     
     <header>
-        <h1>Contact Us</h1>
+        <h1>Visitor Form</h1>
         <p>For any questions, you can send me a message using the form below.</p>
     </header>
     
     <div class="form-container">
         <form action="https://formspree.io/f/xdkekyoa" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="identity">Identity:</label>
+            <input type="text" id="identity" name="identity" required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
             <label for="phone">Phone Numb.:</label>
             <input type="text" id="phone" name="phone" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
+            <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
             <input type="submit" value="Send">
         </form>
     </div>

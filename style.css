@@ -1,0 +1,290 @@
+   
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #AFEEEE; /* PaleTurquoise sebagai background utama */
+        }
+        
+        .title-container {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #00BFFF; /* DeepSkyBlue untuk header */
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        .navbar {
+            width: 100%;
+            position: relative;
+            background-color: #87CEEB; /* SkyBlue untuk navbar */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end; /* Mengatur item ke kanan */
+        }
+        
+        .navbar li {
+            margin-left: 20px; /* Jarak antar item menu */
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            color: #004080; /* Warna teks gelap untuk kontras */
+            font-weight: bold;
+        }
+        
+        .navbar a:hover {
+            color: white;
+            background-color: #00BFFF; /* DeepSkyBlue saat hover */
+            border-radius: 4px;
+        }
+                header {
+            text-align: center;
+            border-bottom: 2px solid #00BFFF;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            background-color: white;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            color: #00BFFF;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            color: #004080;
+        }
+      
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .animated-button {
+            background-color: #00BFFF; /* DeepSkyBlue untuk tombol */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .animated-button:hover {
+            background-color: #0099CC; /* DeepSkyBlue yang sedikit lebih gelap saat hover */
+            transform: scale(1.05);
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 2px solid #00BFFF; /* Border DeepSkyBlue */
+        }
+        
+        .book {
+            font-size: 100px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+        
+        .book:hover {
+            transform: scale(1.1);
+        }
+        
+        .message {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #00BFFF; /* DeepSkyBlue untuk pesan */
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #E0FFFF; /* LightCyan background for message */
+        }
+        
+        .show {
+            opacity: 1;
+        }
+        
+        .pulse {
+            animation: pulse 0.5s ease;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        p {
+            color: #004080; /* Warna teks yang lebih gelap untuk keterbacaan */
+            line-height: 1.6;
+        }
+        
+        img {
+            border: 3px solid #00BFFF !important; /* Border gambar DeepSkyBlue */
+        }
+        .form-container {
+            background-color: white;
+            padding: 25px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid #00BFFF;
+            border-top: none;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #004080;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #B0E0E6; /* PowderBlue */
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, textarea:focus {
+            border-color: #00BFFF;
+            outline: none;
+            box-shadow: 0 0 6px rgba(0, 191, 255, 0.4);
+        }
+        
+        input[type="submit"] {
+            background-color: #00BFFF;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: bold;
+            width: auto;
+            display: block;
+            margin: 20px auto 0;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0099CC;
+            transform: scale(1.05);
+        }
+        /* Profile image styling */
+        .profile-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #00BFFF;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #87CEEB; /* Light blue border */
+        }
+        
+        th {
+            background-color: #00BFFF; /* DeepSkyBlue */
+            color: white;
+            width: 40%;
+            border-radius: 4px 0 0 4px;
+        }
+        
+        tr:hover {
+            background-color: #E0FFFF; /* LightCyan on hover */
+        }
+        .container-about {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            padding: 30px;
+            margin: 20px auto;
+            position: relative;
+            border: 2px solid #00BFFF; /* Border DeepSkyBlue */
+        }
+        
+        .container-about h2 {
+            color: #004080;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        .container-book {
+            text-align: center;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 2px solid #00BFFF; /* Border DeepSkyBlue */
+        }
+
+        .book-collection {
+            font-size: small;
+            display: flex;
+            margin: 20px auto;
+            padding: 20px 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 2px solid #00BFFF;
+        }

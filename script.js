@@ -1,9 +1,26 @@
-// function darkMode() {
-//     let body = document.body;
-//     body.classList.toggle("dark-mode");
 
-// }
 
+        const bookIcon = document.getElementById('bookIcon');
+        const messageText = document.getElementById('messageText');
+        
+        bookIcon.addEventListener('click', function() {
+            // Add pulse animation
+            this.classList.add('pulse');
+            
+            // Show message
+            messageText.classList.add('show');
+            
+            // Remove pulse animation after it completes
+            setTimeout(() => {
+                this.classList.remove('pulse');
+            }, 500);
+            
+            // Hide message after 3 seconds
+            setTimeout(() => {
+                messageText.classList.remove('show');
+            }, 3000);
+        });
+        
 function gotolib() {
     const userConfirmation = confirm("Are you sure you wanna go to WBI Library?");
 
