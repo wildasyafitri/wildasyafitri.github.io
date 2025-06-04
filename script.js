@@ -28,6 +28,6 @@ function gotolib() {
         window.open('https://library.wbi.ac.id/index.php', '_blank');   
     }
 }
-document.cookie="username=Cookie;expires=Mon, 17 May 2025 23:59:59 GMT;path=/";
-let cookie=document.cookie;
-console.log(cookie);//Output:username=Cookie
+document.cookie="username=Cookie;expires=Mon, 25 December 2025 23:59:59 GMT;path=/";
+let cookies=document.cookie;
+console.log(cookies);//Output:username=Cookie
