@@ -31,3 +31,4 @@ function gotolib() {
 document.cookie="username=Cookie;expires=Mon, 25 December 2025 23:59:59 GMT;path=/";
 let cookies=document.cookie;
 console.log(cookies);//Output:username=Cookie
+
